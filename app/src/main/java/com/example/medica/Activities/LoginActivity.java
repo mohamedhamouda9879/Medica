@@ -1,4 +1,4 @@
-package com.example.medica;
+package com.example.medica.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.example.medica.R;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,19 +18,22 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     protected Button signIn;
     protected TextView register;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         super.setContentView(R.layout.activity_login);
         initView();
+
     }
+
+
 
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.signIn) {
 
         } else if (view.getId() == R.id.register) {
-
             startActivity(new Intent(LoginActivity.this,RegisterActivity.class));
 
         }
