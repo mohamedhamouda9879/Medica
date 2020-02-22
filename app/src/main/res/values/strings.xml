@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Medica</string>
     <string name="medica">Medica</string>
+    <string name="facebook_app_id">1092900694384332</string>
+    <string name="fb_login_protocol_scheme">fb1092900694384332</string>
+    <string name="error">Error</string>
+    <string name="email_register_before">Email register before</string>
+    <string name="ok">Ok</string>
+    <string name="loading">Loading</string>
 </resources>
