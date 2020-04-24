@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.CtActivity">
+
+
+
+    <ImageView
+        android:id="@+id/topimage"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/imagegradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/filter"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/filter_ic"
+        app:layout_constraintHorizontal_bias=".75"
+        app:layout_constraintBottom_toBottomOf="@id/topimage"
+        app:layout_constraintVertical_bias=".50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/topimage" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CT Scanner"
+        app:layout_constraintTop_toTopOf="@id/topimage"
+        app:layout_constraintBottom_toBottomOf="@id/topimage"
+        app:layout_constraintStart_toStartOf="@id/topimage"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@id/topimage"
+        app:layout_constraintHorizontal_bias=".150"
+        android:textColor="@color/white"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topimage"
+        tools:listitem="@layout/card_item" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

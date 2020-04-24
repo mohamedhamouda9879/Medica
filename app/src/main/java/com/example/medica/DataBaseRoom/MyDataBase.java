@@ -17,7 +17,7 @@ public abstract class MyDataBase extends RoomDatabase {
 
         if (myDataBase == null) {
             myDataBase = Room.databaseBuilder(context.getApplicationContext(),
-                    MyDataBase.class, "Medica_Database")
+                    MyDataBase.class, "M_Database")
                     .allowMainThreadQueries()
                     .build();
 

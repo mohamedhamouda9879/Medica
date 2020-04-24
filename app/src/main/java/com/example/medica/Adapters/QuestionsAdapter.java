@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.medica.DataBaseRoom.QuizModel;
 import com.example.medica.R;
 
 import java.util.List;
@@ -16,9 +17,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.viewHolder>{
 
-    List<String> data;
+    List<QuizModel> data;
 
-    public QuestionsAdapter(List<String> data) {
+    public QuestionsAdapter(List<QuizModel> data) {
         this.data = data;
     }
 
@@ -34,8 +35,8 @@ public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.view
     @Override
     public void onBindViewHolder(@NonNull viewHolder holder, int position) {
 
-        String x=data.get(position);
-        holder.txt.setText(x);
+        QuizModel x=data.get(position);
+        holder.txt.setText(x.getRow7());
 
     }
 

@@ -2,6 +2,7 @@ package com.example.medica.DataBaseRoom;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 @Entity
@@ -10,6 +11,8 @@ public class QuizModel {
     @PrimaryKey(autoGenerate = true)
     int id ;
 
+    @ColumnInfo
+    String model;
     @ColumnInfo
     String row7;
     @ColumnInfo
@@ -90,10 +93,13 @@ public class QuizModel {
     String row69;
 
 
+    @Ignore
     public QuizModel() {
     }
 
-    public QuizModel(String row7, String row8, String row9, String row10, String row12, String row13, String row15, String row16, String row17, String row18, String row20, String row21, String row22, String row23, String row25, String row26, String row28, String row29, String row30, String row31, String row33, String row34, String row35, String row36, String row37, String row39, String row40, String row42, String row43, String row45, String row46, String row48, String row49, String row51, String row52, String row53, String row54, String row55, String row57, String row58, String row59, String row60, String row61, String row62, String row63, String row64, String row65, String row66, String row67, String row68, String row69) {
+    public QuizModel(String model,String row7, String row8, String row9, String row10, String row12, String row13, String row15, String row16, String row17, String row18, String row20, String row21, String row22, String row23, String row25, String row26, String row28, String row29, String row30, String row31, String row33, String row34, String row35, String row36, String row37, String row39, String row40, String row42, String row43, String row45, String row46, String row48, String row49, String row51, String row52, String row53, String row54, String row55, String row57, String row58, String row59, String row60, String row61, String row62, String row63, String row64, String row65, String row66, String row67, String row68, String row69) {
+
+        this.model=model;
         this.row7 = row7;
         this.row8 = row8;
         this.row9 = row9;

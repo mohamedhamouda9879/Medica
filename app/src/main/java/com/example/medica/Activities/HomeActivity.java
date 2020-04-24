@@ -34,42 +34,16 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     protected ImageView image3;
     protected TextView name3;
     protected TextView desc3;
-    List<QuizModel> data;
-    List<QuizModel> res;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         super.setContentView(R.layout.activity_home);
-
-        data = new ArrayList<>();
-        res = new ArrayList<>();
-        MyDataBase.getInstance(this).QuizDAo().addItem(new QuizModel(
-                "xx", "xx", "xx", "xx", "xx",
-                "xx", "xx", "xx", "xx", "xx",
-                "xx", "xx", "xx", "xx", "xxxx",
-                "xx", "xx", "xx", "xx", "xx",
-                "xx", "xx", "xx", "xx", "xx",
-                "xx", "xx", "xx", "xx", "xx",
-                "xx", "xx", "xx", "xx", "xx",
-                "xx", "xx", "xx", "xx", "xx",
-                "xx", "xxx", "xx", "xx", "xx",
-                "xx", "xx", "xx", "xx", "xx", "xx"));
-
-        data = MyDataBase.getInstance(this).QuizDAo().selectAllItems();
-        Log.e("DATA LEN", data.size() + "");
-
-
-        /*res=MyDataBase.getInstance(this).QuizDAo().selectAllItems("xx");
-        Log.e("DATA ",res.size()+"");*/
-        res = MyDataBase.getInstance(this).QuizDAo().selectAllItems("xx", "xx", "xx", "xx", "xx",
-                "xx", "xx", "xx", "xx", "xx",
-                "xx", "xx", "xx", "xx", "xx",
-                "xx", "xx");
-
-        Log.e("DATA ", res.size() + "");
         initView();
+
+
     }
 
 
@@ -94,7 +68,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         if (view.getId() == R.id.image2) {
 
-            startActivity(new Intent(HomeActivity.this,QuizActivity.class));
+            startActivity(new Intent(HomeActivity.this,CtActivity.class));
         }
     }
 }
