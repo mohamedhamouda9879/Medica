@@ -36,9 +36,12 @@ public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.view
     public void onBindViewHolder(@NonNull viewHolder holder, int position) {
 
         QuizModel x=data.get(position);
-        holder.txt.setText(x.getRow7());
+        holder.txt.setText(x.getDevice());
+        holder.txt2.setText(x.getCo());
 
     }
+
+
 
     @Override
     public int getItemCount() {
@@ -49,12 +52,14 @@ public class QuestionsAdapter extends RecyclerView.Adapter<QuestionsAdapter.view
 
 
         TextView txt;
+        TextView txt2;
         CardView cardView;
         public viewHolder(@NonNull View itemView) {
             super(itemView);
 
             cardView=itemView.findViewById(R.id.card_item);
             txt=itemView.findViewById(R.id.option);
+            txt2=itemView.findViewById(R.id.option2);
             cardView.setOnCreateContextMenuListener(this);
         }
 

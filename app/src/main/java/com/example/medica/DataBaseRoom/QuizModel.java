@@ -11,93 +11,60 @@ public class QuizModel {
     @PrimaryKey(autoGenerate = true)
     int id ;
 
-    @ColumnInfo
-    String model;
-    @ColumnInfo
-    String row7;
-    @ColumnInfo
-    String row8;
-    @ColumnInfo
-    String row9;
-    @ColumnInfo
-    String row10;
-    @ColumnInfo
-    String row12;
-    @ColumnInfo
-    String row13;
-    @ColumnInfo
-    String row15;
-    @ColumnInfo
-    String row16;
-    @ColumnInfo
-    String row17;
-    @ColumnInfo
-    String row18;
-    @ColumnInfo
-    String row20;
-    @ColumnInfo
-    String row21;
-    @ColumnInfo
-    String row22;
-    @ColumnInfo
-    String row23;
-    @ColumnInfo
-    String row25;
-    @ColumnInfo
-    String row26;
-    @ColumnInfo
-    String row28; @ColumnInfo
-    String row29; @ColumnInfo
-    String row30; @ColumnInfo
-    String row31;  @ColumnInfo
-    String row33;
-    @ColumnInfo
-    String row34; @ColumnInfo
-    String row35; @ColumnInfo
-    String row36;
-    @ColumnInfo
-    String row37;
-    @ColumnInfo
-    String row39;
-    @ColumnInfo
-    String row40;
-    @ColumnInfo
-    String row42; @ColumnInfo
-    String row43; @ColumnInfo
-    String row45; @ColumnInfo
-    String row46; @ColumnInfo
-    String row48; @ColumnInfo
-    String row49;
-     @ColumnInfo
-    String row51;
-     @ColumnInfo
-    String row52; @ColumnInfo
-    String row53; @ColumnInfo
-    String row54; @ColumnInfo
-    String row55;
-    @ColumnInfo
-    String row57;
-    @ColumnInfo
-    String row58;
-    @ColumnInfo
-    String row59;
-    String row60; @ColumnInfo
-    String row61; @ColumnInfo
-    String row62; @ColumnInfo
-    String row63; @ColumnInfo
-    String row64; @ColumnInfo
-    String row65; @ColumnInfo
-    String row66; @ColumnInfo
-    String row67;@ColumnInfo
-    String row68; @ColumnInfo
-    String row69;
+    @ColumnInfo String model;
+    @ColumnInfo String row7;
+    @ColumnInfo String row8;
+    @ColumnInfo String row9;
+    @ColumnInfo String row10;
+    @ColumnInfo String row12;
+    @ColumnInfo String row13;
+    @ColumnInfo String row15;
+    @ColumnInfo String row16;
+    @ColumnInfo String row17;
+    @ColumnInfo String row18;
+    @ColumnInfo String row20;
+    @ColumnInfo String row21;
+    @ColumnInfo String row22;
+    @ColumnInfo String row23;
+    @ColumnInfo String row25;
+    @ColumnInfo String row26;
+    @ColumnInfo String row28;
+    @ColumnInfo String row29;
+    @ColumnInfo String row30;
+    @ColumnInfo String row31;
+    @ColumnInfo String row33;
+    @ColumnInfo String row34;
+    @ColumnInfo String row35;
+    @ColumnInfo String row36;
+    @ColumnInfo String row37;
+    @ColumnInfo String row39;
+    @ColumnInfo String row40;
+    @ColumnInfo String row42;
+    @ColumnInfo String row43;
+    @ColumnInfo String row45;
+    @ColumnInfo String row46;
+    @ColumnInfo String row48;
+    @ColumnInfo String row49;
+    @ColumnInfo String row51;
+    @ColumnInfo String row52;
+    @ColumnInfo String row53;
+    @ColumnInfo String row54;
+    @ColumnInfo String row55;
+    @ColumnInfo String row57;
+    @ColumnInfo String row58;
+    @ColumnInfo String row59;
+    @ColumnInfo String row60;
+    @ColumnInfo String row61;
+    @ColumnInfo String row62;
+    @ColumnInfo String row63;
+
 
 
     @Ignore
     public QuizModel() {
     }
 
-    public QuizModel(String model,String row7, String row8, String row9, String row10, String row12, String row13, String row15, String row16, String row17, String row18, String row20, String row21, String row22, String row23, String row25, String row26, String row28, String row29, String row30, String row31, String row33, String row34, String row35, String row36, String row37, String row39, String row40, String row42, String row43, String row45, String row46, String row48, String row49, String row51, String row52, String row53, String row54, String row55, String row57, String row58, String row59, String row60, String row61, String row62, String row63, String row64, String row65, String row66, String row67, String row68, String row69) {
+    public QuizModel(String model,String row7, String row8, String row9, String row10, String row12, String row13, String row15, String row16, String row17, String row18, String row20, String row21, String row22, String row23, String row25, String row26, String row28, String row29, String row30, String row31, String row33, String row34, String row35, String row36, String row37, String row39, String row40, String row42, String row43, String row45, String row46, String row48, String row49, String row51, String row52, String row53, String row54, String row55, String row57, String row58, String row59, String row60, String row61, String row62, String row63) {
 
         this.model=model;
         this.row7 = row7;
@@ -145,12 +112,7 @@ public class QuizModel {
         this.row61 = row61;
         this.row62 = row62;
         this.row63 = row63;
-        this.row64 = row64;
-        this.row65 = row65;
-        this.row66 = row66;
-        this.row67 = row67;
-        this.row68 = row68;
-        this.row69 = row69;
+
     }
 
     public int getId() {
@@ -161,7 +123,10 @@ public class QuizModel {
         this.id = id;
     }
 
-    public String getRow7() {
+    public String getDevice() {
+        return row8;
+    }
+    public String getCo() {
         return row7;
     }
 
@@ -521,51 +486,4 @@ public class QuizModel {
         this.row63 = row63;
     }
 
-    public String getRow64() {
-        return row64;
-    }
-
-    public void setRow64(String row64) {
-        this.row64 = row64;
-    }
-
-    public String getRow65() {
-        return row65;
-    }
-
-    public void setRow65(String row65) {
-        this.row65 = row65;
-    }
-
-    public String getRow66() {
-        return row66;
-    }
-
-    public void setRow66(String row66) {
-        this.row66 = row66;
-    }
-
-    public String getRow67() {
-        return row67;
-    }
-
-    public void setRow67(String row67) {
-        this.row67 = row67;
-    }
-
-    public String getRow68() {
-        return row68;
-    }
-
-    public void setRow68(String row68) {
-        this.row68 = row68;
-    }
-
-    public String getRow69() {
-        return row69;
-    }
-
-    public void setRow69(String row69) {
-        this.row69 = row69;
-    }
 }

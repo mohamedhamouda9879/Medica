@@ -32,6 +32,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.signIn) {
+            startActivity(new Intent(LoginActivity.this,CtActivity.class));
 
         } else if (view.getId() == R.id.register) {
             startActivity(new Intent(LoginActivity.this,RegisterActivity.class));
